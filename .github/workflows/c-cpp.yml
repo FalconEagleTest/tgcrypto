@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: OsmAnd-build/arm-linux-gnueabi-gcc@v1
-    - run:  arm-linux-gnueabi-gcc -static -march=armv7-a /tgcrypto/tgcrypto.c -o main      
+    - uses: carlosperate/arm-none-eabi-gcc@v1
+    - run:  arm-none-eabi-gcc -static -march=armv7-a /tgcrypto/tgcrypto.c -o main      
            
            
